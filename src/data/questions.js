@@ -610,6 +610,13 @@ export const questions = [
         id: 53,
         type: 'ordering',
         question: "Una vez definida la hipotesis principal de investigacion ¿Cuales son los pasos a seguir?",
+        items: [
+            "Inferir las consecuencias contrastables",
+            "Realizar las pruebas empinicas elegidas para recolectar los datos",
+            "Organizar la evidencia reunida",
+            "Interpretar los resultados",
+            "Sacar conclusiones sobre el valor de verdad de la hipótesis"
+        ],
         correctOrder: [
             "Inferir las consecuencias contrastables",
             "Realizar las pruebas empinicas elegidas para recolectar los datos",
@@ -618,5 +625,162 @@ export const questions = [
             "Sacar conclusiones sobre el valor de verdad de la hipótesis"
         ],
         explanation: ""
+    },
+    {
+        id: 54,
+        type: 'multiple-selection',
+        question: "El valor numérico es...",
+        options: [
+            "el número real que representa al grado de una propiedad predico por la teoría.",
+            "el número que representa al mensurandum y se obtiene tras un proceso de medición y lleva error.",
+            "es una aproximación racional que representa al mensurandum, obtenido mediante un proceso empírico de medición.",
+            "es el valor que se le atribuye al mensurandum desde la teoría."
+        ],
+        correctAnswers: [
+            "el número real que representa al grado de una propiedad predico por la teoría.",
+            "es el valor que se le atribuye al mensurandum desde la teoría."
+        ],
+        explanation: ""
+    },
+    {
+        id: 55,
+        type: 'true-false',
+        question: "Algunas hipótesis de las ciencias fácticas contienen solo términos teóricos.",
+        correctAnswer: true,
+        explanation: ""
+    },
+    {
+        id: 56,
+        type: 'multiple-choice',
+        question: "Elija la afirmación VERDADERA",
+        options: [
+            "Las ciencias fácticas presuponen ciertas teorías formales que no se discuten.",
+            "Las ciencias fácticas son autosuficientes.",
+            "Todos los enunciados de las ciencias fácticas que pueden expresarse en el lenguaje formal son verdaderos.",
+            "Las ciencias fácticas sólo emplean métodos empíricos."
+        ],
+        correctAnswer: "Las ciencias fácticas presuponen ciertas teorías formales que no se discuten.",
+        explanation: ""
+    },
+    {
+        id: 57,
+        type: 'multiple-choice',
+        question: "La hipótesis principal de investigación se formula...",
+        options: [
+            "a partir de la inventiva del investigador, en el contexto del marco teórico.",
+            "por inferencia deductiva de los conocimientos teóricos vigentes.",
+            "a partir de los datos recolectados mediante técnicas aceptadas por la comunidad científica.",
+            "por inferencia deductiva de los conocimientos teóricos vigentes.",
+        ],
+        correctAnswer: "a partir de la inventiva del investigador, en el contexto del marco teórico.",
+        explanation: ""
+    },
+    {
+        id: 58,
+        type: 'true-false',
+        question: "En una escala métrica los intervalos entre las marcas deben ser uniformes para poder comparar dos magnitudes del mismo tipo que difieren entre sí.",
+        correctAnswer: false,
+        explanation: ""
+    },
+    {
+        id: 59,
+        type: 'multiple-selection',
+        question: "En la contrastación de una hipótesis, la evidencia se construye...",
+        options: [
+            "sólo con los datos determinados como pertinentes.",
+            "con todos los datos disponibles.",
+            "sólo con los datos favorables a la hipótesis.",
+            "guiada por la hipótesis principal de investigación."
+        ],
+        correctAnswers: [
+            "sólo con los datos determinados como pertinentes.",
+            "guiada por la hipótesis principal de investigación."
+        ],
+        explanation: ""
+    },
+    {
+        id: 60,
+        type: 'ordering',
+        question: "Ordene siendo: Individual - Clase - Relacional Comparativo - Cuantitativo: \n\n De acuerdo con la teoria mecanica, la refraccion se debe a [a] fuerzas que actúan sobre los [b] corpúsculos luminosos; fuerzas que tienen su onigen en las particulas de vidrio. Estas fuerzas son diferentes para los diferentes corpusculos de los distintos colores; son [c] maximas para el [d] color violeta y minimas para el rojo. Cada color se refracta, por eso, a lo largo de una trayectoria distinta y se separa de los otros colores al emerger del prisma.(...)",
+        items: [
+            "Fuerzas",
+            "Corpúsculos Luminosos",
+            "Maximas",
+            "Color Violeta"
+        ],
+        correctOrder: [
+            "Color Violeta",
+            "Corpúsculos Luminosos",
+            "Maximas",
+            "Fuerzas"
+        ],
+        explanation: "Perdon que esta re mal explicado no me deja poner enters xd"
+    },
+    {
+        id: 61,
+        type: 'true-false',
+        question: "Para el desarrollo tecnologico, la evaluacion externa es condicionante - aun en los casos en que un proyecto se haya juzgado factible y eficiente ·ya que expresa el valor e interes que le adjudica a tal proyecto un grupo humano en particular.",
+        correctAnswer: true,
+        explanation: ""
+    },
+    {
+        id: 62,
+        type: 'multiple-choice',
+        question: "Elija la opcion que justifique la FALSEDAD de la siguiente afirmacion: 'El conocimiento cientifico es completamente independiente del conocimiento ordinario' es una afirmacion falsa porque...",
+        options: [
+            "el conocimiento común de hoy incorpora resultados de la investigacibn cientifica de ayer",
+            "el avance de la investigacion necesariamente rechata al conocimiento común",
+            "la difusion del conocimiento cientifico no afecta al conocimiento ordinario",
+            "son incompatibles entre si."
+        ],
+        correctAnswer: "el conocimiento común de hoy incorpora resultados de la investigacibn cientifica de ayer",
+        explanation: ""
+    },
+    {
+        id: 63,
+        type: 'multiple-choice',
+        question: "Indique que tipo de magnitud es la masa",
+        options: [
+            "cuasiextenisiva",
+            "intensiva",
+            "extenisiva",
+            "condicionalmente extenisiva"
+        ],
+        correctAnswer: "cuasiextenisiva",
+        explanation: ""
+    },
+    {
+        id: 64,
+        type: 'multiple-selection',
+        question: "Indique cuáles de las siguientes afirmaciones SON VERDADERAS",
+        options: [
+            "Los problemas teóricos requieren heuristicas divergentes y convergentes para su resolución",
+            "Los problemas teóricos son cerrados",
+            "Los problemas teóricos son propios de la ingeniería",
+            "En los problemas teóricos, la solución constituye una explicación factica"
+        ],
+        correctAnswers: [
+            "Los problemas teóricos requieren heuristicas divergentes y convergentes para su resolución",
+            "En los problemas teóricos, la solución constituye una explicación factica"
+        ],
+        explanation: ""
+    },
+    {
+        id: 65,
+        type: 'multiple-selection',
+        question: "Elija la o las opaiones que al completar la frase la conviertan en una afirmacion VERDADERA: La ambiguedad de un concepto..",
+        options: [
+            "alude a que tiene mas de un significado posible.",
+            "alude a la extension, al dominio de aplicabilidad.",
+            "se reduce con la definicion",
+            "se elimina con la deficion",
+            "es una falla del lenguaje"
+        ],
+        correctAnswers: [
+            "alude a que tiene mas de un significado posible.",
+            "se elimina con la deficion"
+        ],
+        explanation: ""
     }
+
 ];
