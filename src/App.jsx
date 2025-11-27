@@ -20,15 +20,15 @@ function App() {
     // Randomize questions
 
     // Debug mode
-    const debugId = 60;
-    const debugQuestion = initialQuestions.find(q => q.id === debugId);
+    // const debugId = 60;
+    // const debugQuestion = initialQuestions.find(q => q.id === debugId);
 
-    const shuffled = debugQuestion
-      ? [debugQuestion]                     // solo esa pregunta
-      : [...initialQuestions].sort(() => Math.random() - 0.5); // flujo normal
+    // const shuffled = debugQuestion
+    //   ? [debugQuestion]                     // solo esa pregunta
+    //   : [...initialQuestions].sort(() => Math.random() - 0.5); // flujo normal
 
 
-    // const shuffled = [...initialQuestions].sort(() => Math.random() - 0.5);
+    const shuffled = [...initialQuestions].sort(() => Math.random() - 0.5);
     setQuestions(shuffled);
     setScore(0);
     setCurrentQuestionIndex(0);
