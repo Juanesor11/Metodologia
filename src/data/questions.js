@@ -781,6 +781,637 @@ export const questions = [
             "se elimina con la deficion"
         ],
         explanation: ""
+    },
+    {
+        id: 66,
+        type: 'multiple-choice',
+        question: "En ciencias fácticas, el propósito de la contrastación de las hipótesis es...",
+        options: [
+            "Obtener evidencia que permita evaluar la correspondencia entre las hipótesis y la realidad a la que refieren",
+            "Determinar qué tipos de procedimientos son seguros para realizar las comprobacion empíricas",
+            "Evaluar cuán efectivo resulta el método científico",
+            "Establece las implicancias lógicas que se derivan de la obtención de datos"
+        ],
+        correctAnswer: "Obtener evidencia que permita evaluar la correspondencia entre las hipótesis y la realidad a la que refieren",
+        explanation: ""
+    },
+    {
+        id: 67,
+        type: 'multiple-selection',
+        question: "De las siguientes afirmaciones, determine la o las verdaderas",
+        options: [
+            "En los informes de investigación pueden incluirse anécdotas o experiencias del grupo de trabajo",
+            "La introducción de un proyecto o informe no lleva subtítulos",
+            "En la sección Resultados se presentan los datos recolectados con ayuda de figuras o tablas pero sin interpretación. El análisis crítico se realiza en la sección Discusión."
+        ],
+        correctAnswers: [
+            "La introducción de un proyecto o informe no lleva subtítulos",
+            "En la sección Resultados se presentan los datos recolectados con ayuda de figuras o tablas pero sin interpretación. El análisis crítico se realiza en la sección Discusión."
+        ],
+        explanation: ""
+    },
+    {
+        id: 68,
+        type: 'true-false',
+        question: "La determinación de los objetivos del desarrollo tecnológico requiere considerar las necesidades y deseos de una sociedad y los valores que orientan sus expectativas; esto manifiesta la dimensión política del desarrollo tecnológico.",
+        correctAnswer: true,
+        explanation: ""
+    },
+    {
+        id: 69,
+        type: 'true-false',
+        question: "La determinación de los objetivos de los programas de I+D requiere exclusivamente de los científicos y tecnólogos, ya que debe prevalecer la opinión de los expertos.",
+        correctAnswer: false,
+        explanation: ""
+    },
+    {
+        id: 70,
+        type: 'multiple-choice',
+        question: "Marque la opción verdadera",
+        options: [
+            "En la investigación no hay observaciones garantizadas pero las técnicas y los resultados obtenidos mediante ellas resultan confiables por el control intersubjetivo al que están sometidas.",
+            "La aceptabilidad de los resultados obtenidos mediante técnicas de observación dependerá fundamentalmente del tipo de instrumento registrador que se utilice.",
+            "Para ser válida, la observación debe atenerse a los hechos tal cual son, sin ideas previas.",
+            "Las técnicas de observación tienen menos valor metodológico que los experimentos porque no pueden reproducir hechos a voluntad."
+        ],
+        correctAnswer: "En la investigación no hay observaciones garantizadas pero las técnicas y los resultados obtenidos mediante ellas resultan confiables por el control intersubjetivo al que están sometidas.",
+        explanation: ""
+    },
+    {
+        id: 71,
+        type: 'true-false',
+        question: "La refutación de una hipótesis es concluyente desde el punto de vista lógico, pero antes de descartarla se deben revisar posibles inconsistencias en hipótesis auxiliares o errores en las técnicas empleadas.",
+        correctAnswer: true,
+        explanation: ""
+    },
+    {
+        id: 72,
+        type: 'true-false',
+        question: "Según M. Bunge, el elemento central de organización de una teoría científica es la deducibilidad de sus fórmulas; la unidad temática no es suficiente para constituir una teoría.",
+        correctAnswer: true,
+        explanation: ""
+    },
+    {
+        id: 73,
+        type: 'multiple-choice',
+        question: "Indique qué tipo de magnitud es la longitud de onda de la luz:",
+        options: [
+            "Extensiva",
+            "Condicionalmente extensiva",
+            "Cuasiextensiva",
+            "Intensiva"
+        ],
+        correctAnswer: "Intensiva",
+        explanation: ""
+    },
+    {
+        id: 74,
+        type: 'multiple-choice',
+        question: "Marque la afirmación falsa:",
+        options: [
+            "En el ámbito académico, uno de los propósitos de la definición es explicar teóricamente, ya que al definir se incorpora la significación que la teoría le otorga.",
+            "La ciencia y la tecnología inventan términos o los toman del lenguaje común, asignándoles nuevos significados mediante la definición.",
+            "La vaguedad es una propiedad del lenguaje que se elimina con la definición, que permite establecer con certeza el dominio de aplicabilidad de un término.",
+            "Una proposición es una afirmación que transmite información y puede ser verdadera o falsa."
+        ],
+        correctAnswer: "La vaguedad es una propiedad del lenguaje que se elimina con la definición, que permite establecer con certeza el dominio de aplicabilidad de un término.",
+        explanation: ""
+    },
+    {
+        id: 75,
+        type: 'multiple-choice',
+        question: "La contrastabilidad de una hipótesis fáctica significa...",
+        options: [
+            "Que siempre tiene que ser probada directamente, en alguna situación concreta.",
+            "Que su sentido proviene del marco teórico y este determinará su verdad o falsedad.",
+            "Que pueda ser probada en el campo de la experiencia, por derivación de sus consecuencias contrastables o de modo directo.",
+            "Que requiere de la experiencia para ser puesta a prueba pero necesariamente asistida por la estadística matemática."
+        ],
+        correctAnswer: "Que pueda ser probada en el campo de la experiencia, por derivación de sus consecuencias contrastables o de modo directo.",
+        explanation: ""
+    },
+    {
+        id: 76,
+        type: 'true-false',
+        question: "La hipótesis principal de una investigación surge directamente de la observación de los hechos.",
+        correctAnswer: false,
+        explanation: ""
+    },
+    {
+        id: 77,
+        type: 'multiple-choice',
+        question: "¿Por qué la observación científica resulta confiable y aceptable en investigación?",
+        options: [
+            "Por la intersubjetividad en el control de las técnicas y los resultados",
+            "Por el uso de instrumental tecnológico",
+            "Por la intervención del marco teórico",
+            "El control intersubjetivo de las técnicas y los resultados"
+        ],
+        correctAnswer: "El control intersubjetivo de las técnicas y los resultados",
+        explanation: ""
+    },
+    {
+        id: 78,
+        type: 'multiple-choice',
+        question: "De las siguientes afirmaciones marque la verdadera:",
+        options: [
+            "Un conjunto de proposiciones interrelacionadas constituye un razonamiento",
+            "La ciencia y la tecnología no inventan términos sino que los toman del lenguaje común",
+            "Dentro del lenguaje científico, los conceptos son la unidad de pensamiento; no son ni verdaderos ni falsos y admiten distintas clasificaciones.",
+            "La definición es la operación empírica que elimina vaguedad y ambigüedad."
+        ],
+        correctAnswer: "Dentro del lenguaje científico, los conceptos son la unidad de pensamiento; no son ni verdaderos ni falsos y admiten distintas clasificaciones.",
+        explanation: ""
+    },
+    {
+        id: 79,
+        type: 'multiple-choice',
+        question: "Indique qué tipo de magnitud es la carga eléctrica:",
+        options: [
+            "Extensiva",
+            "Condicionalmente extensiva",
+            "Cuasiextensiva",
+            "Intensiva"
+        ],
+        correctAnswer: "Extensiva",
+        explanation: ""
+    },
+    {
+        id: 80,
+        type: 'multiple-choice',
+        question: "En ciencias fácticas, el propósito de la contrastación de la hipótesis es...",
+        options: [
+            "Obtener evidencia que permita evaluar la correspondencia entre las hipótesis y la realidad a la que refieren",
+            "Establecer las implicancias lógicas derivadas de los datos",
+            "Evaluar cuán efectivo es el método científico",
+            "Determinar qué procedimientos son seguros para comprobaciones empíricas"
+        ],
+        correctAnswer: "Obtener evidencia que permita evaluar la correspondencia entre las hipótesis y la realidad a la que refieren",
+        explanation: ""
+    },
+    {
+        id: 81,
+        type: 'true-false',
+        question: "Según Bunge: Las teorías son modelos esquemáticos que representan un sistema real; así la ciencia organiza el conocimiento.",
+        correctAnswer: false,
+        explanation: ""
+    },
+    {
+        id: 82,
+        type: 'true-false',
+        question: "La confirmación de una hipótesis fáctica tiene debilidad lógica, y aunque se acepte con alta probabilidad, siempre está abierta a la posibilidad de error.",
+        correctAnswer: true,
+        explanation: ""
+    },
+    {
+        id: 83,
+        type: 'multiple-selection',
+        question: "Determine la o las verdaderas:",
+        options: [
+            "El diseño como solución debe explicarse en detalle en la sección Introducción.",
+            "En Resultados se presentan datos sin interpretación; el análisis es en Discusión.",
+            "El objetivo de la investigación se ubica en Materiales y Métodos.",
+            "El formato de presentación es rígido, pero se puede usar redacción personalizada."
+        ],
+        correctAnswers: [
+            "El diseño como solución debe explicarse en detalle en la sección Introducción.",
+            "En Resultados se presentan datos sin interpretación; el análisis es en Discusión."
+        ],
+        explanation: ""
+    },
+    {
+        id: 84,
+        type: 'multiple-selection',
+        question: "Marque cuáles de las siguientes características corresponden a las inferencias inductivas:",
+        options: [
+            "Poseen valor heurístico",
+            "La conclusión explicita el contenido de las premisas pero no amplía el conocimiento",
+            "Son las únicas inferencias admitidas para la construcción de conocimiento científico y tecnológico",
+            "Son correctas desde el punto de vista lógico",
+            "Sus conclusiones son contingentes"
+        ],
+        correctAnswers: [
+            "Poseen valor heurístico",
+            "Sus conclusiones son contingentes"
+        ],
+        explanation: ""
+    },
+    {
+        id: 85,
+        type: 'true-false',
+        question: "Segunda posición de Bunge: El principal elemento de organización de una teoría es la unidad temática de las hipótesis o leyes que la conforman. Por esto, las teorías científicas representan de manera simplificada algún sistema real.",
+        correctAnswer: false,
+        explanation: ""
+    },
+    {
+        id: 86,
+        type: 'true-false',
+        question: "La confirmación de una hipótesis toma la forma de un razonamiento inductivo y se la acepta como verdadera con alta probabilidad según la evidencia, aun cuando su debilidad lógica sea irresoluble.",
+        correctAnswer: true,
+        explanation: ""
+    },
+    {
+        id: 87,
+        type: 'multiple-choice',
+        question: "No hay garantías de observaciones precisas en la investigación, entonces ¿qué las hace aceptables?",
+        options: [
+            "La consistencia del marco teórico",
+            "El control intersubjetivo de las técnicas y los resultados",
+            "El uso exclusivo de técnicas experimentales",
+            "El rigor lógico del método científico"
+        ],
+        correctAnswer: "El control intersubjetivo de las técnicas y los resultados",
+        explanation: ""
+    },
+    {
+        id: 88,
+        type: 'true-false',
+        question: "La hipótesis principal de una investigación no surge de la observación de los hechos porque su formulación requiere deducirla del marco teórico.",
+        correctAnswer: true,
+        explanation: ""
+    },
+    {
+        id: 89,
+        type: 'multiple-choice',
+        question: "La contrastabilidad de una hipótesis fáctica significa...",
+        options: [
+            "que su sentido provendrá del marco teórico y éste determinará su verdad o falsedad",
+            "que pueda ser probada en el campo de la experiencia por derivación de sus consecuencias contrastables o de modo directo",
+            "que siempre tiene que estar probada directamente en alguna situación concreta",
+            "que requiere de la experiencia para ser puesta a prueba pero necesariamente asistida por la estadística matemática"
+        ],
+        correctAnswer: "que pueda ser probada en el campo de la experiencia por derivación de sus consecuencias contrastables o de modo directo",
+        explanation: ""
+    },
+    {
+        id: 90,
+        type: 'multiple-choice',
+        question: "¿En qué sección se detallan las pruebas a realizar o realizadas en una investigación?",
+        options: [
+            "Materiales y métodos",
+            "Discusión",
+            "Introducción",
+            "Resultados"
+        ],
+        correctAnswer: "Materiales y métodos",
+        explanation: ""
+    },
+    {
+        id: 91,
+        type: 'multiple-choice',
+        question: "Marque la afirmación falsa:",
+        options: [
+            "Las ciencias fácticas utilizan enunciados sintéticos y analíticos",
+            "Las hipótesis fácticas deben formularse siempre en vocabulario empírico",
+            "Las ciencias fácticas resuelven problemas teóricos",
+            "Dentro del método general de las ciencias fácticas, cada disciplina establece técnicas específicas"
+        ],
+        correctAnswer: "Las hipótesis fácticas deben formularse siempre en vocabulario empírico",
+        explanation: ""
+    },
+    {
+        id: 92,
+        type: 'true-false',
+        question: "Según Bunge: Para que un conjunto de hipótesis constituya una teoría, el rasgo fundamental no es el tema factual sino la deducibilidad de sus fórmulas. La sistematicidad es central para el progreso científico.",
+        correctAnswer: true,
+        explanation: ""
+    },
+    {
+        id: 93,
+        type: 'true-false',
+        question: "La hipótesis principal surge de la observación de los hechos porque su formulación requiere ser deducida del marco teórico.",
+        correctAnswer: false,
+        explanation: ""
+    },
+    {
+        id: 94,
+        type: 'multiple-selection',
+        question: "Marque cuáles de las siguientes características corresponden a las inferencias deductivas:",
+        options: [
+            "Poseen valor heurístico",
+            "La conclusión explicita el contenido de las premisas pero no amplía el conocimiento",
+            "Son las únicas inferencias admitidas para la construcción de conocimiento científico y tecnológico",
+            "Son correctas desde el punto de vista lógico",
+            "Sus conclusiones son contingentes"
+        ],
+        correctAnswers: [
+            "La conclusión explicita el contenido de las premisas pero no amplía el conocimiento",
+            "Son correctas desde el punto de vista lógico"
+        ],
+        explanation: ""
+    },
+    {
+        id: 95,
+        type: 'true-false',
+        question: "Desde el punto de vista lógico, la confirmación de una hipótesis toma la forma de un razonamiento inductivo y se la acepta como verdadera con alta probabilidad según la evidencia obtenida.",
+        correctAnswer: true,
+        explanation: ""
+    },
+    {
+        id: 96,
+        type: 'multiple-choice',
+        question: "La contrastabilidad de una hipótesis fáctica significa...",
+        options: [
+            "que pueda ser probada en el campo de la experiencia por derivación de sus consecuencias contrastables o de modo directo",
+            "que requiere de la experiencia para ser puesta a prueba pero necesariamente asistida por la estadística matemática",
+            "que pueda ser probada en alguna situación concreta directamente",
+            "que su sentido provendrá del marco teórico y determinará su verdad o falsedad"
+        ],
+        correctAnswer: "que pueda ser probada en el campo de la experiencia por derivación de sus consecuencias contrastables o de modo directo",
+        explanation: ""
+    },
+    {
+        id: 97,
+        type: 'multiple-choice',
+        question: "Marque la afirmación falsa:",
+        options: [
+            "Las ciencias fácticas presuponen teorías formales que no ponen en discusión",
+            "Las ciencias formales solamente utilizan fórmulas analíticas",
+            "Las ciencias formales resuelven problemas teóricos",
+            "La verdad de las fórmulas matemáticas se determina por su contenido y método de prueba"
+        ],
+        correctAnswer: "Las ciencias formales resuelven problemas teóricos",
+        explanation: ""
+    },
+    {
+        id: 98,
+        type: 'true-false',
+        question: "Si una hipótesis resulta refutada mediante razonamiento deductivo, antes de descartarla se deben revisar posibles errores metodológicos o en hipótesis auxiliares.",
+        correctAnswer: true,
+        explanation: ""
+    },
+    {
+        id: 99,
+        type: 'multiple-choice',
+        question: "¿En qué sección se ubica la formulación de la hipótesis principal?",
+        options: [
+            "Materiales y Métodos",
+            "Discusión",
+            "Resultados",
+            "Introducción"
+        ],
+        correctAnswer: "Introducción",
+        explanation: ""
+    },
+    {
+        id: 100,
+        type: 'multiple-choice',
+        question: "En ciencias fácticas, el propósito de la contrastación de hipótesis es...",
+        options: [
+            "Establecer implicancias lógicas de los datos",
+            "Obtener evidencia que evalúe la correspondencia entre hipótesis y realidad",
+            "Evaluar cuán efectivo es el método científico",
+            "Determinar qué procedimientos son seguros para comprobaciones empíricas"
+        ],
+        correctAnswer: "Obtener evidencia que evalúe la correspondencia entre hipótesis y realidad",
+        explanation: ""
+    },
+    {
+        id: 101,
+        type: 'true-false',
+        question: "Un ingeniero no innova al diseñar un proyecto porque la solución surge solo de combinar tecnologías disponibles.",
+        correctAnswer: true,
+        explanation: ""
+    },
+    {
+        id: 102,
+        type: 'multiple-choice',
+        question: "Marque la opción falsa:",
+        options: [
+            "Las técnicas experimentales y las de observación tienen el mismo valor metodológico",
+            "Para ser válida, la observación debe atenerse a los hechos tal cual son, sin ideas previas",
+            "La objetividad es una construcción intersubjetiva basada en consenso experto",
+            "Cuando no se pueden repetir fenómenos, se refuerzan controles empíricos y teóricos"
+        ],
+        correctAnswer: "Para ser válida, la observación debe atenerse a los hechos tal cual son, sin ideas previas",
+        explanation: ""
+    },
+    {
+        id: 103,
+        type: 'multiple-selection',
+        question: "En la contrastación de una hipótesis, la evidencia se construye...",
+        options: [
+            "sólo con los datos determinados como pertinentes",
+            "sólo con los datos favorables a la hipótesis",
+            "con todos los datos disponibles guiada por la hipótesis principal de investigación"
+        ],
+        correctAnswers: [
+            "sólo con los datos determinados como pertinentes",
+            "con todos los datos disponibles guiada por la hipótesis principal de investigación"
+        ],
+        explanation: ""
+    },
+    {
+        id: 104,
+        type: 'multiple-selection',
+        question: "Señale la/s opción/es verdaderas:",
+        options: [
+            "Los enunciados referentes a la experiencia inmediata son esencialmente incorregibles",
+            "La ciencia inventa y arriesga conjeturas que van más allá del conocimiento común y nuestra experiencia",
+            "Las consecuencias contrastables se obtienen de la experiencia",
+            "Las reglas del método científico carecen de justificación teórica"
+        ],
+        correctAnswers: [
+            "La ciencia inventa y arriesga conjeturas que van más allá del conocimiento común y nuestra experiencia"
+        ],
+        explanation: ""
+    },
+    {
+        id: 105,
+        type: 'true-false',
+        question: "En una escala métrica el cero es necesario pero no es suficiente, porque se debe especificar si se trata de un cero absoluto o relativo.",
+        correctAnswer: false,
+        explanation: ""
+    },
+    {
+        id: 106,
+        type: 'multiple-selection',
+        question: "Indique cuáles de las siguientes afirmaciones SON FALSAS.",
+        options: [
+            "La resolución de un problema lógico constituye una explicación que tiene valor fáctico.",
+            "La resolución de un problema lógico requiere indagar variables implícitas",
+            "Los problemas lógicos pueden requerir heurísticas necesarias para el sujeto que lo resuelve, pero no propias del problema",
+            "Los problemas lógicos se resuelven por análisis racional exclusivamente"
+        ],
+        correctAnswers: [
+            "La resolución de un problema lógico constituye una explicación que tiene valor fáctico."
+        ],
+        explanation: ""
+    },
+    {
+        id: 107,
+        type: 'multiple-choice',
+        question: "Indique qué tipo de magnitud es la masa.",
+        options: [
+            "condicionalmente extensiva",
+            "extensiva",
+            "cuasiextensiva",
+            "intensiva"
+        ],
+        correctAnswer: "cuasiextensiva",
+        explanation: ""
+    },
+    {
+        id: 108,
+        type: 'true-false',
+        question: "Para determinar los objetivos del desarrollo tecnológico es necesario indagar en las expectativas y necesidades de una sociedad determinada y explicitarlas.",
+        correctAnswer: true,
+        explanation: ""
+    },
+    {
+        id: 109,
+        type: 'multiple-choice',
+        question: "Según el modelo hipotético-deductivo, una hipótesis puede caracterizarse como...",
+        options: [
+            "un enunciado obtenido inductivamente a partir de datos.",
+            "un enunciado que trasciende los hechos que deben ser explicados.",
+            "un enunciado que describe hechos, siempre perceptibles directamente.",
+            "un conjunto de sucesos que requieren explicación."
+        ],
+        correctAnswer: "un enunciado que trasciende los hechos que deben ser explicados.",
+        explanation: ""
+    },
+    {
+        id: 110,
+        type: 'multiple-choice',
+        question: "De las siguientes opciones, elija la afirmación verdadera:",
+        options: [
+            "Las ciencias fácticas son autosuficientes",
+            "Las ciencias fácticas sólo emplean métodos empíricos.",
+            "Todos los enunciados de las ciencias fácticas que pueden expresarse en lenguaje formal son verdaderos.",
+            "Las ciencias fácticas presuponen ciertas teorías formales que no se discuten"
+        ],
+        correctAnswer: "Las ciencias fácticas presuponen ciertas teorías formales que no se discuten",
+        explanation: ""
+    },
+    {
+        id: 111,
+        type: 'multiple-selection',
+        question: "La cuantificación es anterior a la medición porque...",
+        options: [
+            "la cuantificación es una actividad que no requiere hacer mediciones",
+            "la cuantificación precede lógicamente a la medición",
+            "decide desde la teoría qué propiedades de un sistema real son medibles",
+            "la medición viene después de la cuantificación",
+            "No puede haber cuantificación sin medición"
+        ],
+        correctAnswers: [
+            "la cuantificación precede lógicamente a la medición",
+            "decide desde la teoría qué propiedades de un sistema real son medibles"
+        ],
+        explanation: ""
+    },
+    {
+        id: 112,
+        type: 'true-false',
+        question: "Algunas hipótesis fácticas no son contrastables.",
+        correctAnswer: false,
+        explanation: ""
+    },
+    {
+        id: 113,
+        type: 'multiple-selection',
+        question: "Indique cuáles de las siguientes afirmaciones SON VERDADERAS:",
+        options: [
+            "En los problemas teóricos, la solución constituye una explicación fáctica",
+            "Los problemas teóricos requieren heurísticas divergentes y convergentes para su resolución",
+            "Los problemas teóricos son cerrados",
+            "Los problemas teóricos se resuelven mediante algoritmos y en base a la experiencia del sujeto",
+            "Los problemas teóricos son propios de la ingeniería"
+        ],
+        correctAnswers: [
+            "En los problemas teóricos, la solución constituye una explicación fáctica",
+            "Los problemas teóricos requieren heurísticas divergentes y convergentes para su resolución"
+        ],
+        explanation: ""
+    },
+    {
+        id: 114,
+        type: 'true-false',
+        question: "Para el desarrollo tecnológico, la perspectiva central es la evaluación interna, mientras que la evaluación externa requiere informar y educar a la sociedad.",
+        correctAnswer: false,
+        explanation: ""
+    },
+    {
+        id: 115,
+        type: 'multiple-selection',
+        question: "La cuantificación es anterior a la medición porque...",
+        options: [
+            "la medición viene después de la cuantificación",
+            "la cuantificación es una actividad que no requiere hacer mediciones",
+            "la cuantificación precede lógicamente a la medición",
+            "decide desde la teoría qué propiedades de un sistema real son medibles",
+            "No puede haber cuantificación sin medición"
+        ],
+        correctAnswers: [
+            "la cuantificación precede lógicamente a la medición",
+            "decide desde la teoría qué propiedades de un sistema real son medibles"
+        ],
+        explanation: ""
+    },
+    {
+        id: 116,
+        type: 'true-false',
+        question: "En una escala métrica los intervalos entre las marcas deben ser uniformes para poder comparar dos magnitudes del mismo tipo.",
+        correctAnswer: false,
+        explanation: ""
+    },
+    {
+        id: 117,
+        type: 'multiple-selection',
+        question: "La vaguedad de un concepto...",
+        options: [
+            "con la definición, se elimina.",
+            "se reduce con la definición.",
+            "alude al dominio de aplicabilidad, a los referentes del concepto.",
+            "es una falla del lenguaje.",
+            "alude a que tiene más de un significado posible."
+        ],
+        correctAnswers: [
+            "se reduce con la definición.",
+            "alude al dominio de aplicabilidad, a los referentes del concepto."
+        ],
+        explanation: ""
+    },
+    {
+        id: 118,
+        type: 'multiple-selection',
+        question: "Complete la siguiente expresión con la/s opción/es adecuada/s de modo que quede justificada: La cuantificacíon es anterior a la medición porque...",
+        options: [
+            "la medición viene después de la cuantificación",
+            "la cuantificación precede lógicamente a la medición",
+            "decide desde la teoría qué propiedades de un sistema real son medibles",
+            "No puede haber cuantificación sin medición"
+        ],
+        correctAnswers: [
+            "la cuantificación precede lógicamente a la medición",
+            "decide desde la teoría qué propiedades de un sistema real son medibles"
+        ],
+        explanation: ""
+    },
+    {
+        id: 119,
+        type: 'true-false',
+        question: "En una escala métrica los intervalos entre las marcas deben ser uniformes para poder comparar dos magnitudes del mismo tipo.",
+        correctAnswer: false,
+        explanation: ""
+    },
+    {
+        id: 120,
+        type: 'multiple-selection',
+        question: "La vaguedad de un concepto...",
+        options: [
+            "con la definición, se elimina.",
+            "se reduce con la definición.",
+            "alude al dominio de aplicabilidad, a los referentes del concepto.",
+            "es una falla del lenguaje.",
+            "alude a que tiene más de un significado posible."
+        ],
+        correctAnswers: [
+            "se reduce con la definición.",
+            "alude al dominio de aplicabilidad, a los referentes del concepto."
+        ],
+        explanation: ""
     }
-
 ];
+

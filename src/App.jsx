@@ -80,10 +80,13 @@ function App() {
 
   const startFavoritesReview = () => {
     const favQuestions = initialQuestions.filter(q => favoriteQuestions.includes(q.id));
+    if (favQuestions.length === 0) return;
+
     setQuestions(favQuestions);
     setScore(0);
     setCurrentQuestionIndex(0);
     setShowResults(false);
+    setQuizStarted(true); // Ensure we leave the welcome screen
     setIsReviewMode(true);
     setReviewType('favorites');
     setIncorrectQuestions([]);
@@ -118,13 +121,24 @@ function App() {
             <p className="text-xl mb-8" style={{ color: 'var(--text-muted)' }}>
               Preparate para tu final con estilo.
             </p>
-            <button
-              className="btn btn-primary"
-              onClick={startQuiz}
-            >
-              <Play size={20} />
-              Comenzar
-            </button>
+            <div className="flex flex-col gap-4 items-center">
+              <button
+                className="btn btn-primary"
+                onClick={startQuiz}
+              >
+                <Play size={20} />
+                Comenzar
+              </button>
+
+              {favoriteQuestions.length > 0 && (
+                <button
+                  className="btn btn-accent"
+                  onClick={startFavoritesReview}
+                >
+                  ⭐ Repasar Favoritas ({favoriteQuestions.length})
+                </button>
+              )}
+            </div>
           </motion.div>
         ) : showResults ? (
           <motion.div
