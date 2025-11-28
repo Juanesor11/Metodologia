@@ -15,6 +15,8 @@ function App() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [showResults, setShowResults] = useState(false);
+  const [incorrectQuestions, setIncorrectQuestions] = useState([]);
+  const [isReviewMode, setIsReviewMode] = useState(false);
 
   const startQuiz = () => {
     // Randomize questions
@@ -34,10 +36,17 @@ function App() {
     setCurrentQuestionIndex(0);
     setShowResults(false);
     setQuizStarted(true);
+    setIsReviewMode(false);
+    setIncorrectQuestions([]);
   };
 
   const handleAnswer = (isCorrect) => {
-    if (isCorrect) setScore(score + 1);
+    if (isCorrect) {
+      setScore(score + 1);
+    } else {
+      // Track incorrect question for review mode
+      setIncorrectQuestions([...incorrectQuestions, currentQuestion]);
+    }
 
     const nextIndex = currentQuestionIndex + 1;
     if (nextIndex < questions.length) {
@@ -45,6 +54,15 @@ function App() {
     } else {
       setShowResults(true);
     }
+  };
+
+  const startReview = () => {
+    setQuestions(incorrectQuestions);
+    setScore(0);
+    setCurrentQuestionIndex(0);
+    setShowResults(false);
+    setIsReviewMode(true);
+    setIncorrectQuestions([]); // Reset for new review session
   };
 
   const currentQuestion = questions[currentQuestionIndex];
@@ -81,7 +99,14 @@ function App() {
             animate={{ opacity: 1, scale: 1 }}
             className="glass-card"
           >
-            <Results score={score} total={questions.length} onRetry={startQuiz} />
+            <Results
+              score={score}
+              total={questions.length}
+              onRetry={startQuiz}
+              onReview={startReview}
+              incorrectCount={incorrectQuestions.length}
+              isReviewMode={isReviewMode}
+            />
           </motion.div>
         ) : (
           <motion.div

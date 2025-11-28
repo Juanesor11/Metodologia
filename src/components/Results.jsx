@@ -1,7 +1,7 @@
 import React from 'react';
 import confetti from 'canvas-confetti';
 
-export function Results({ score, total, onRetry }) {
+export function Results({ score, total, onRetry, onReview, incorrectCount, isReviewMode }) {
     React.useEffect(() => {
         if (score / total > 0.5) {
             confetti({
@@ -20,11 +20,26 @@ export function Results({ score, total, onRetry }) {
                 {score} / {total}
             </div>
             <p className="text-xl mb-8 text-gray-300">
-                {score === total ? "¡Perfecto! 🌟" : score > total / 2 ? "¡Bien hecho! 👍" : "Sigue practicando 💪"}
+                {isReviewMode
+                    ? `Repaso completado: ${score} de ${total} correctas esta vez`
+                    : score === total
+                        ? "¡Perfecto! 🌟"
+                        : score > total / 2
+                            ? "¡Bien hecho! 👍"
+                            : "Sigue practicando 💪"
+                }
             </p>
-            <button className="btn btn-primary" onClick={onRetry}>
-                Intentar de nuevo
-            </button>
+            <div className="flex gap-4 justify-center flex-wrap">
+                <button className="btn btn-primary" onClick={onRetry}>
+                    {isReviewMode ? "Volver al Inicio" : "Intentar de nuevo"}
+                </button>
+
+                {!isReviewMode && incorrectCount > 0 && (
+                    <button className="btn btn-secondary" onClick={onReview}>
+                        Repasar Incorrectas ({incorrectCount})
+                    </button>
+                )}
+            </div>
         </div>
     );
 }
