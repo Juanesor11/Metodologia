@@ -1,7 +1,7 @@
 import React from 'react';
 import confetti from 'canvas-confetti';
 
-export function Results({ score, total, onRetry, onReview, incorrectCount, isReviewMode }) {
+export function Results({ score, total, onRetry, onReview, onReviewFavorites, incorrectCount, favoritesCount, isReviewMode, reviewType }) {
     React.useEffect(() => {
         if (score / total > 0.5) {
             confetti({
@@ -13,6 +13,20 @@ export function Results({ score, total, onRetry, onReview, incorrectCount, isRev
         }
     }, [score, total]);
 
+    const getResultMessage = () => {
+        if (reviewType === 'incorrect') {
+            return `Repaso de incorrectas: ${score} de ${total} correctas esta vez`;
+        } else if (reviewType === 'favorites') {
+            return `Repaso de favoritas: ${score} de ${total} correctas`;
+        } else if (score === total) {
+            return "¡Perfecto! 🌟";
+        } else if (score > total / 2) {
+            return "¡Bien hecho! 👍";
+        } else {
+            return "Sigue practicando 💪";
+        }
+    };
+
     return (
         <div className="text-center">
             <h2 className="text-3xl mb-4">¡Quiz Completado!</h2>
@@ -20,14 +34,7 @@ export function Results({ score, total, onRetry, onReview, incorrectCount, isRev
                 {score} / {total}
             </div>
             <p className="text-xl mb-8 text-gray-300">
-                {isReviewMode
-                    ? `Repaso completado: ${score} de ${total} correctas esta vez`
-                    : score === total
-                        ? "¡Perfecto! 🌟"
-                        : score > total / 2
-                            ? "¡Bien hecho! 👍"
-                            : "Sigue practicando 💪"
-                }
+                {getResultMessage()}
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
                 <button className="btn btn-primary" onClick={onRetry}>
@@ -37,6 +44,12 @@ export function Results({ score, total, onRetry, onReview, incorrectCount, isRev
                 {!isReviewMode && incorrectCount > 0 && (
                     <button className="btn btn-secondary" onClick={onReview}>
                         Repasar Incorrectas ({incorrectCount})
+                    </button>
+                )}
+
+                {!isReviewMode && favoritesCount > 0 && (
+                    <button className="btn btn-accent" onClick={onReviewFavorites}>
+                        ⭐ Repasar Favoritas ({favoritesCount})
                     </button>
                 )}
             </div>

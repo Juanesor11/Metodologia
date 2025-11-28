@@ -3,6 +3,7 @@
   --primary: #4ecca3;
   --secondary: #3a7bd5;
   --accent: #e94560;
+  --accent-primary: #fbbf24;
   --text: #eeeeee;
   --text-muted: #a0a0a0;
   --glass-bg: rgba(22, 33, 62, 0.6);
@@ -94,6 +95,35 @@ body {
   transform: translateY(-2px) scale(1.02);
 }
 
+.btn-accent {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  border: none;
+}
+
+.btn-accent:hover {
+  box-shadow: 0 0 30px rgba(245, 87, 108, 0.4);
+  transform: translateY(-2px) scale(1.02);
+}
+
+.favorite-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+}
+
+.favorite-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
 h1,
 h2,
 h3 {
@@ -128,6 +158,10 @@ h3 {
 
 .justify-start {
   justify-content: flex-start;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .gap-2 {
@@ -224,6 +258,10 @@ h3 {
 
 .rounded {
   border-radius: 0.25rem;
+}
+
+.flex-1 {
+  flex: 1;
 }
 
 /* Status Colors */
@@ -355,6 +393,10 @@ h3 {
 
 .flex-grow {
   flex-grow: 1;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 ul {

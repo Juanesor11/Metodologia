@@ -17,6 +17,17 @@ function App() {
   const [showResults, setShowResults] = useState(false);
   const [incorrectQuestions, setIncorrectQuestions] = useState([]);
   const [isReviewMode, setIsReviewMode] = useState(false);
+  const [reviewType, setReviewType] = useState(null); // 'incorrect' or 'favorites'
+  const [favoriteQuestions, setFavoriteQuestions] = useState(() => {
+    // Load favorites from localStorage
+    const saved = localStorage.getItem('favoriteQuestions');
+    return saved ? JSON.parse(saved) : [];
+  });
+
+  // Save favorites to localStorage whenever they change
+  useEffect(() => {
+    localStorage.setItem('favoriteQuestions', JSON.stringify(favoriteQuestions));
+  }, [favoriteQuestions]);
 
   const startQuiz = () => {
     // Randomize questions
@@ -37,6 +48,7 @@ function App() {
     setShowResults(false);
     setQuizStarted(true);
     setIsReviewMode(false);
+    setReviewType(null);
     setIncorrectQuestions([]);
   };
 
@@ -62,7 +74,29 @@ function App() {
     setCurrentQuestionIndex(0);
     setShowResults(false);
     setIsReviewMode(true);
+    setReviewType('incorrect');
     setIncorrectQuestions([]); // Reset for new review session
+  };
+
+  const startFavoritesReview = () => {
+    const favQuestions = initialQuestions.filter(q => favoriteQuestions.includes(q.id));
+    setQuestions(favQuestions);
+    setScore(0);
+    setCurrentQuestionIndex(0);
+    setShowResults(false);
+    setIsReviewMode(true);
+    setReviewType('favorites');
+    setIncorrectQuestions([]);
+  };
+
+  const toggleFavorite = (questionId) => {
+    setFavoriteQuestions(prev => {
+      if (prev.includes(questionId)) {
+        return prev.filter(id => id !== questionId);
+      } else {
+        return [...prev, questionId];
+      }
+    });
   };
 
   const currentQuestion = questions[currentQuestionIndex];
@@ -104,8 +138,11 @@ function App() {
               total={questions.length}
               onRetry={startQuiz}
               onReview={startReview}
+              onReviewFavorites={startFavoritesReview}
               incorrectCount={incorrectQuestions.length}
+              favoritesCount={favoriteQuestions.length}
               isReviewMode={isReviewMode}
+              reviewType={reviewType}
             />
           </motion.div>
         ) : (
@@ -116,7 +153,11 @@ function App() {
             exit={{ opacity: 0, x: -50 }}
             transition={{ duration: 0.3 }}
           >
-            <QuestionCard title={`Pregunta ${currentQuestionIndex + 1} de ${questions.length}`}>
+            <QuestionCard
+              title={`Pregunta ${currentQuestionIndex + 1} de ${questions.length}`}
+              isFavorite={favoriteQuestions.includes(currentQuestion.id)}
+              onToggleFavorite={() => toggleFavorite(currentQuestion.id)}
+            >
               <h3 className="text-2xl mb-6 font-medium">{currentQuestion.question}</h3>
 
               {currentQuestion.type === 'multiple-choice' && (
